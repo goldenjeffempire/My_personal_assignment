@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+/**
+  * main - Entry point of the program
+  * description - A program to calculate BMI of patients
+  * score - patient BMI score 
+  * Return: Always 0
+  */
+
+int main(void) {
+ int score;
+
+  printf("Enter the score: ");
+  scanf("%d", &score);
+
+  if (score < 18)
+    printf("Underweight\n");
+
+  if (score >= 18 && score <= 25)
+    printf("Normalweight\n");
+
+  if (score > 25 && score <= 29)
+    printf("Overweight\n");
+
+  if (score >= 30)
+    printf("Obesity\n");
+
+    return 0;
+}
